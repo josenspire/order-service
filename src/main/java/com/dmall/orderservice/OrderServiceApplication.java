@@ -11,6 +11,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 @EnableFeignClients
 //TODO: enable hystrix and dashboard
+@EnableCircuitBreaker
+@EnableHystrixDashboard
 public class OrderServiceApplication {
 
     public static void main(String[] args) {
